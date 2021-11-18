@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="dark">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+        <link href="styles.css" rel="stylesheet">
+        <link href="css/all.css" rel="stylesheet">
+        <title>Google</title>
+        <script defer src="js/all.js"></script>    
+        <script>
+            window.onload = function(){ 
+                document.getElementById("open-account").onclick = (() => {
+                    var elem = document.getElementById("list-account");
+                    if (!elem.classList.contains('hidden')) {
+                        document.getElementById("list-account").classList.add("hidden");
+                    } else {
+                        document.getElementById("list-account").classList.remove("hidden");
+                    }
+                })
+            }
+        </script>
+    </head>
+    <body class="dark:bg-gray-900 select-none dark:text-gray-400">
+        <div class="relative w-full h-screen">
+            <div class="absolute top-0 right-0 p-4 w-auto" align="right">
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="w-12 h-12 rounded-full hover:bg-gray-800 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </button>
+                </div>
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="w-12 h-12 rounded-full hover:bg-gray-800 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        <i class="fas fa-images fa-lg"></i>
+                    </button>
+                </div>
+                <div class="inline-block m-1 align-top">
+                    <button data-button="app" type="button" class="w-12 h-12 rounded-full hover:bg-gray-800 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        <i class="fas fa-th fa-lg"></i>
+                    </button>
+                </div>
+                <div class="inline-block m-1 align-top relative">
+                    <img id="open-account" src="images/profile.png" class="rounded-full w-12 h-12 object-cover border-4 border-transparent hover:border-gray-800 transition-all duration-100 cursor-pointer" draggable="false"/>
+                    <div id="list-account" class="absolute top-16 right-1 bg-gray-800 rounded-lg w-96 shadow-md hidden" align="right">
+                        <div align="center" class="p-4">
+                            <img src="images/profile.png" class="rounded-full w-20 h-20 object-cover cursor-pointer" draggable="false"/>
+                        </div>
+                        <div align="center" class="mt-0">
+                            <div class="text-lg">
+                                Thanawut Promraungdet
+                            </div>
+                            <div class="text-md dark:text-gray-500">
+                                promraungdet@gmail.com
+                            </div>
+                            <div class="m-4">
+                                <button type="button" class="py-2 px-4 rounded-full bg-gray-700 hover:bg-gray-600 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                                    Manage your Google Account
+                                </button>
+                            </div>
+                            <div class="mt-6 divide-y divide-gray-700 border-t border-b border-gray-700">
+                                <div align="left" class="py-4 px-4 cursor-pointer hover:bg-gray-600 hover:bg-opacity-30">
+                                    <div class="inline-block mr-2 align-middle">
+                                        <img src="images/profile1.jpg" class="rounded-full w-10 h-10 object-cover cursor-pointer" draggable="false"/>
+                                    </div>
+                                    <div class="inline-block align-middle text-left">
+                                        <div class="text-md">
+                                            Wait Something
+                                        </div>
+                                        <div class="text-sm">
+                                            waitsomething@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                                <div align="left" class="py-4 px-4 cursor-pointer hover:bg-gray-600 hover:bg-opacity-30">
+                                    <div class="inline-block mr-2 align-middle">
+                                        <img src="images/profile2.png" class="rounded-full w-10 h-10 object-cover cursor-pointer" draggable="false"/>
+                                    </div>
+                                    <div class="inline-block align-middle text-left">
+                                        <div class="text-md">
+                                            Wait Something
+                                        </div>
+                                        <div class="text-sm">
+                                            waitsomething@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div align="left" class="inline-block">
+                                    <button type="button" class="text-sm w-12 h-12 mr-1 rounded-full hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                                        <i class="fas fa-plus fa-lg"></i>
+                                    </button>
+                                    <button type="button" class="text-sm w-12 h-12 ml-1 rounded-full hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                                        <i class="fas fa-power-off fa-lg"></i>
+                                    </button>
+                                </div>
+                                <div align="right" class="inline-block">
+                                    <button type="button" class="text-sm py-1 px-3 rounded-2xl hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                                        Privacy Policy
+                                    </button>
+                                    <button type="button" class="text-sm py-1 px-3 rounded-2xl hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                                        Terms of Service
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-64">
+                <div class="-mt-9" style="width: 36rem;">
+                    <div align="center">
+                        <img src="images/googlelogo_color_272x92dp.png" />
+                    </div>
+                    <div class="mt-7">
+                        <div class="relative">
+                            <input type="text" class="px-10 w-full h-12 dark:bg-gray-800 dark:bg-opacity-50 dark:hover:bg-gray-800 dark:focus:bg-gray-800 hover:bg-opacity-100 rounded-full outline-none transition-all duration-100"/>
+                            <div class="absolute top-1/2 left-4 transform -translate-y-1/2">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="absolute top-1/2 right-4 transform -translate-y-1/2">
+                                <i class="fas fa-microphone cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-7" align="center">
+                        <div class="inline-block m-1">
+                            <button type="button" class="outline-none bg-gray-800 hover:bg-gray-700 py-3 px-4 rounded-lg focus:outline-none transition-all duration-100">Google Search</button>
+                        </div>
+                        <div class="inline-block m-1">
+                            <button type="button" class="outline-none bg-gray-800 hover:bg-gray-700 py-3 px-4 rounded-lg focus:outline-none transition-all duration-100">I'm Feeling Lucky</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 p-4 w-auto" align="right">
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="py-2 px-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        About
+                    </button>
+                </div>
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="py-2 px-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        Advertising
+                    </button>
+                </div>
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="py-2 px-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        Business
+                    </button>
+                </div>
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="py-2 px-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        How Search works
+                    </button>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 p-4 w-auto" align="right">
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="py-2 px-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        Setting
+                    </button>
+                </div>
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="py-2 px-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        Terms
+                    </button>
+                </div>
+                <div class="inline-block m-1 align-top">
+                    <button type="button" class="py-2 px-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-100 cursor-pointer outline-none focus:outline-none">
+                        Privacy
+                    </button>
+                </div>
+            </div>
+        <div>
+    </body>
+</html>
